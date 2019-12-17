@@ -1,0 +1,141 @@
+body{
+  margin: 0;
+
+}
+
+header{
+  display: grid;
+  /* align-items: center; */
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  Grid-template-rows: 90% 10.6%;
+  grid-template-areas:
+  "title title title title title"
+  "About Cakes Cookies Muffins Search"
+}
+
+.title{
+  padding: 2%;
+  grid-area: title;
+  align-items: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 10em;
+  color: white;
+  background-image: url('bakeshop.jpg');
+
+}
+
+.About{
+  grid-area: About;
+  padding: 5%;
+  align-items: center;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 3.5em;
+}
+
+.About:hover{
+  background-color: rgb(251,209,137);
+  color: white;
+}
+
+.Cakes{
+  grid-area: Cakes;
+  padding: 5%;
+  align-items: center;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 3.5em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: white;
+}
+
+.Cakes:hover{
+  background-color: rgb(251,156,92);
+}
+
+.Cookies{
+  grid-area: Cookies;
+  padding: 5%;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 3.5em;
+}
+
+.Cookies:hover{
+  background-color: rgb(245,99,75);
+
+}
+
+.Muffins{
+  grid-area: Muffins;
+  padding: 5%;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 3.5em;
+}
+
+.Muffins:hover{
+  background-color: rgb(236,48,59);
+}
+
+.search{
+  grid-area: Search;
+  padding: 5%;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 3.5em;
+}
+
+.search:hover{
+  background-color: rgb(152,89,19);
+  color: white;
+}
+
+
+
+
+/* body{
+  margin: 0;
+  background:rgb(247,235,213);
+}
+
+.whole{
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  Grid-template-rows: minmax(100px, auto);
+  grid-template-areas:
+  "header header header header"
+  "nav nav nav nav"
+  "main main main main"
+  "main main main main"
+  "footer footer footer footer"
+}
+
+header{
+  grid-area: header;
+  background-color: blue;
+}
+
+nav{
+  grid-area: nav;
+  background-color: pink;
+  display: grid;
+  grid-template-columns: .25fr .25fr .25fr .25fr .25fr
+}
+
+main{
+  grid-area: main;
+  background-color: brown;
+}
+
+footer{
+  grid-area: footer;
+  background-color: red;
+} */

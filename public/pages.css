@@ -1,0 +1,159 @@
+body{
+  margin: 0;
+  background-color: rgb(239,232,192);
+}
+
+header{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  Grid-template-rows: auto auto;
+  grid-template-areas:
+  "title title title title title"
+  "About Cakes Cookies Muffins Search"
+}
+
+.title{
+  /* padding: 4%; */
+  grid-area: title;
+  /* align-items: center; */
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5em;
+  color: white;
+  background-color: rgb(236,48,59);
+
+}
+
+.About{
+  grid-area: About;
+  padding: 5%;
+  align-items: center;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 2em;
+}
+
+.About:hover{
+  background-color: rgb(207,73,22);
+  color: white;
+}
+
+.Cakes{
+  grid-area: Cakes;
+  padding: 5%;
+  align-items: center;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 2em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: white;
+}
+
+.Cakes:hover{
+  background-color: rgb(249,172,61);
+}
+
+.Cookies{
+  grid-area: Cookies;
+  padding: 5%;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 2em;
+}
+
+.Cookies:hover{
+  background-color: rgb(44,117,140);
+
+}
+
+.Muffins{
+  grid-area: Muffins;
+  padding: 5%;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 2em;
+}
+
+.Muffins:hover{
+  background-color: rgb(122,144,60);
+}
+
+.search{
+  grid-area: Search;
+  padding: 5%;
+  background-color: lightgrey;
+  font-family: 'Inria Serif', serif;
+  font-size: 2em;
+}
+
+.search:hover{
+  background-color: rgb(152,89,19);
+  color: white;
+}
+
+/* content displayed on screen */
+
+content{
+  display: grid;
+  align-items: center;
+  grid-template-columns:50% 50%;
+  grid-auto-rows: 50% 50%;
+  grid-gap: 1em;
+}
+
+.products{
+  margin: 10% 20%;
+}
+
+h2{
+  font-family: font-family: 'Acme', sans-serif;
+  font-size: 4em;
+}
+
+li{
+  font-size: 2em;
+  font-family: sans-serif;
+  list-style-type: none;
+}
+
+img{
+  border: .5em solid black;
+  border-radius: 50%;
+  box-shadow: 0 4em 8em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+img:hover{
+border: .7em solid rgb(92,64,51);
+}
+
+main{
+  display:grid;
+  /* grid-template-columns: auto auto; */
+  grid-auto-rows: 50% 50%;
+  grid-template:
+  "bio"
+  "location";
+}
+
+.bio{
+  grid-template: bio;
+  padding: 5% 20%;
+}
+
+.location{
+  grid-template: location;
+  padding: 0% 20%;
+}
+
+#text{
+  font-size: 2em;
+  font-family: sans-serif;
+}
