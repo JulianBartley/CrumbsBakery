@@ -10,7 +10,7 @@ header{
   Grid-template-rows: auto auto;
   grid-template-areas:
   "title title title title title"
-  "About Cakes Cookies Muffins Search"
+  "About Cakes Cookies Muffins Commute"
 }
 
 .title{
@@ -85,15 +85,15 @@ a:hover{
   background-color: rgb(122,144,60);
 }
 
-.search{
-  grid-area: Search;
+.Commute{
+  grid-area: Commute;
   padding: 5%;
   background-color: lightgrey;
   font-family: 'Inria Serif', serif;
   font-size: 2em;
 }
 
-.search:hover{
+.Commute:hover{
   background-color: rgb(152,89,19);
   color: white;
 }

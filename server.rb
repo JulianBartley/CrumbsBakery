@@ -25,72 +25,29 @@ get '/muffins' do
   erb :muffins
 end
 
-get '/search' do
-  erb :search
+get '/commute' do
+  erb :commute
 end
 
-# @@url = https://www.thecocktaildb.com/api/json/
+@@url = 'http://datamine.mta.info/mta_esi.php?key='
+
+#@@url = 'https://samples.openweathermap.org/data/2.5/weather'
 
 
+#post '/commute' do
 
+  # optionally puts the params object to the terminal for your debugging
+  #puts params
+  # set @zip variable to the 'zip_code' from the params object
+  #@zip_param_from_form = params['zip_code']
+  # create a GET request with HTTParty
+  #   passing the @@url as the first argument
+  # second argument is a query hash
+  # query hash includes the query parameters I want to pass in the GET request
+  #req = HTTParty.get(@@url, query: { appid: ENV['MTA_KEY'], &feed_id=1)
 
+  #
+  #@data = JSON.parse(req.body)
+  #puts req
 
-#
-# class Bakery
-#     attr_accessor :name, :price, :description
-#     def initialize(name, price, description)
-#         @name = name
-#         @price = price
-#         @description = description
-#     end
-# end
-#
-#
-# class Cookie < Bakery
-#     attr_accessor :name, :price, :description
-#     def initialize(name, price, description)
-#         super(name, price, description)
-#     end
-# end
-
-# class Cookie
-#   attr_accessor :name, :price, :description
-#   def initialize(name, price, description)
-#     @name = name
-#     @price = price
-#     @description = description
-#   end
-# end
-
-# cookie1 = Cookie.new("Choco-Mountain", 3.25, "Warm and chewy")
-# cookie2 = Cookie.new("Roco-Mountain", 3.75, "Cold and chewy")
-# cookie3 = Cookie.new("Toco-Mountain", 3.25, "Warm and brittle")
-# cookie4 = Cookie.new("Soco-Mountain", 3.75, "Cold and brittle")
-#
-# class Cakes
-#   attr_accessor :name, :price, :description
-#   def initialize(name, price, description)
-#     @name = name
-#     @price = price
-#     @description = description
-#   end
-# end
-#
-# cake1 = Cookie.new("Chocolate", 10.00, "Warm and chewy")
-# cake2 = Cookie.new("Strawberry", 9.75, "Cold and chewy")
-# cake3 = Cookie.new("Fudge", 7.25, "Warm and brittle")
-# cake4 = Cookie.new("Cheesecake", 8.75, "Cold and brittle")
-#
-# class Muffins
-#   attr_accessor :name, :price, :description
-#   def initialize(name, price, description)
-#     @name = name
-#     @price = price
-#     @description = description
-#   end
-# end
-#
-# muffin1 = Cookie.new("English", 3.00, "Warm and chewy")
-# muffin2 = Cookie.new("Plain", 2.75, "Cold and chewy")
-# muffin3 = Cookie.new("Chocolate", 2.25, "Warm and brittle")
-# muffin4 = Cookie.new("Blueberry", 2.75, "Cold and brittle")
+#end
