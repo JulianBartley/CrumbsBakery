@@ -29,25 +29,21 @@ get '/commute' do
   erb :commute
 end
 
-@@url = 'http://datamine.mta.info/mta_esi.php?key='
 
-#@@url = 'https://samples.openweathermap.org/data/2.5/weather'
+post '/text' do
 
 
-#post '/commute' do
+	account_sid = ENV['T_SID']
+	auth_token = ENV['T_TOK']
+	puts ENV['T_SID']
+	puts ENV['T_TOK']
+	client = Twilio::REST::Client.new(account_sid, auth_token)
 
-  # optionally puts the params object to the terminal for your debugging
-  #puts params
-  # set @zip variable to the 'zip_code' from the params object
-  #@zip_param_from_form = params['zip_code']
-  # create a GET request with HTTParty
-  #   passing the @@url as the first argument
-  # second argument is a query hash
-  # query hash includes the query parameters I want to pass in the GET request
-  #req = HTTParty.get(@@url, query: { appid: ENV['MTA_KEY'], &feed_id=1)
 
-  #
-  #@data = JSON.parse(req.body)
-  #puts req
+	client.messages.create(
+	from: '13853556406',
+	to: '9172838767',
+	body: "You qualify for a special discount! Thanks for shopping with us!"
+	)
 
-#end
+end

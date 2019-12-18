@@ -157,3 +157,16 @@ main{
   font-size: 2em;
   font-family: sans-serif;
 }
+
+#phone{
+  padding: .5% 2.5%;
+}
+
+.promo{
+  margin: 0 30%;
+  font-size: 2em;
+}
+
+#btn{
+  padding: .6%;
+}
